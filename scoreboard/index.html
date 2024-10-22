@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scoreboard</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Scoreboard</h1>
+        </header>
+        <main>
+            <section id="scoreboard">
+                <div class="scoreboard-item-section">
+                    <div class="scoreboard-item">
+                        <h2 class="team-header">Home</h2>
+                        <div class="team-score" id="home-score">0</div>
+                        <div class="team-score-buttons">
+                            <button
+                                class="score-button"
+                                id="home-add-1"
+                                onclick="homeAdd(1)"
+                            >
+                                +1
+                            </button>
+                            <button
+                                class="score-button"
+                                id="home-add-2"
+                                onclick="homeAdd(2)"
+                            >
+                                +2
+                            </button>
+                            <button
+                                class="score-button"
+                                id="home-add-3"
+                                onclick="homeAdd(3)"
+                            >
+                                +3
+                            </button>
+                        </div>
+                    </div>
+                    <div class="scoreboard-item">
+                        <h2 class="team-header">Guest</h2>
+                        <div class="team-score" id="guest-score">0</div>
+                        <div class="team-score-buttons">
+                            <button
+                                class="score-button"
+                                id="guest-add-1"
+                                onclick="guestAdd(1)"
+                            >
+                                +1
+                            </button>
+                            <button
+                                class="score-button"
+                                id="guest-add-2"
+                                onclick="guestAdd(2)"
+                            >
+                                +2
+                            </button>
+                            <button
+                                class="score-button"
+                                id="guest-add-3"
+                                onclick="guestAdd(3)"
+                            >
+                                +3
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="misc">
+                    <button id="reset" onclick="reset()">Reset</button>
+                </div>
+            </section>
+            <script src="app.js"></script>
+        </main>
+    </body>
+</html>

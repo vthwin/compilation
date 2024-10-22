@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+    font-family: "Open Sans", sans-serif;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Hero Section */
+section.hero {
+    background-image: url("https://images.unsplash.com/photo-1475615787683-f1a161b002b1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-header {
+    color: white;
+    background-color: #f0a868;
+    padding: 0.5vh 1vh;
+    border-radius: 5px;
+    font-size: xx-large;
+}
+
+#hero-paragraph {
+    color: white;
+    padding: 0.5vh 1vh;
+    border-radius: 5px;
+    font-size: large;
+    background-color: brown;
+    width: 350px; /* Changed from inline-size for clarity */
+    margin-top: 1vh;
+}
+
+/* Main Section */
+main {
+    background-color: #6a8d73;
+    color: #f4fdd9;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+main h2,
+main h3 {
+    color: #e4ffe1;
+}
+
+section.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 225px;
+    margin: 20px;
+}
+
+.card > * + * {
+    margin-top: 1vh;
+}
+
+.card-img {
+    width: 12vh; /* Make image responsive */
+    height: 12vh; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+/* Business Section */
+.business-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.business-card {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    background-color: #59a5d8;
+    border-radius: 20px;
+    border-bottom: 8px solid #84d2f6;
+    overflow: hidden;
+}
+
+.business-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.business-info h2,
+#name {
+    color: #133c55;
+}
+
+.business-info p {
+    color: white;
+}
+
+.business-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
