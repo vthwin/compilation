@@ -1,0 +1,66 @@
+body {
+    background-color: #1f2937;
+    font-family: "Karla", sans-serif;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border: 1px solid white;
+    padding: 3% 2.5%;
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    color: #55f991;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 42px;
+    width: 380px;
+}
+
+#slogan {
+    color: #d5d4d8;
+    font-size: 22px;
+}
+
+#generate {
+    background-color: #10b981;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin: 2vh 0;
+}
+
+#generate:hover {
+    cursor: pointer;
+}
+
+#password {
+    margin: 2vh 0;
+    width: 500px;
+    border-top: 1px solid #2f3e53;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0 0;
+}
+
+.pw-field {
+    width: 225px;
+    height: 3.5vh;
+    background-color: #273549;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
