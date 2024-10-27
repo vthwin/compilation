@@ -9,8 +9,8 @@ const kgToLbs = 2.20462;
 
 convertBtn.addEventListener("click", () => {
     let userInput = Number(inputEl.value);
-    console.log(userInput);
-    if (inputEl !== NaN) {
+    console.log(typeof userInput);
+    if (!isNaN(userInput)) {
         lengthEl.innerHTML = conversionCalculator(
             userInput,
             "meters",
