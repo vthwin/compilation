@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: lightgrey;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    overflow: clip;
+    background-color: white;
+}
+
+/* Header Section */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+header img:first-child {
+    width: 140px;
+    height: 50px;
+}
+
+/* Post Item Section */
+
+.post-item {
+    margin: 6px auto;
+    padding-bottom: 10px;
+}
+
+.post-user-info {
+    margin: 0 10px;
+    line-height: 15px;
+}
+
+.post-user-info p:first-child {
+    font-weight: bold;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.avatar-pic {
+    width: 45x;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.post-img {
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+}
+
+/* Post Interactive and Comment Section */
+
+.post-interactive > * {
+    margin: 2px 0;
+    padding: 3px 6px;
+}
+
+.post-text {
+    padding: 0 14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-icons img {
+    width: 26px;
+    margin: 0 5px;
+}
+
+.post-icons img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.comment {
+    font-weight: 400;
+}
