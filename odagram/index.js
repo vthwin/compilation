@@ -29,13 +29,13 @@ const posts = [
     },
 ];
 
-let mainEl = document.getElementsByTagName("main")[0];
+const mainEl = document.getElementsByTagName("main")[0];
 let generatedPost = "";
 
 for (let i = 0; i < posts.length; i++) {
     let post = posts[i];
     generatedPost += `
-        <div class="container post-item">
+        <div class="container post-item" data-index="${i}">
             <div class="post-header">
                 <img class="avatar-pic" src=${post.avatar} />
                 <div class="post-user-info">
@@ -46,7 +46,7 @@ for (let i = 0; i < posts.length; i++) {
             <img class="post-img" src=${post.post} />
             <div class="post-interactive">
                 <div class="post-icons">
-                    <img src="images/icon-heart.png" />
+                    <img class="like-btn" src="images/icon-heart.png" />
                     <img src="images/icon-comment.png" />
                     <img src="images/icon-dm.png" />
                 </div>
@@ -59,5 +59,15 @@ for (let i = 0; i < posts.length; i++) {
     `;
 }
 
-console.log(generatedPost);
 mainEl.innerHTML = generatedPost;
+
+const likeEl = document.querySelectorAll(".like-btn");
+likeEl.forEach((likeBtn, index) => {
+    likeBtn.addEventListener("dblclick", () => {
+        posts[index].likes++;
+        const likeCount = document.querySelector(
+            `.post-item[data-index='${index}'] .post-text p:first-child`
+        );
+        likeCount.textContent = `${posts[index].likes} likes`;
+    });
+});
