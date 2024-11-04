@@ -32,6 +32,10 @@ const posts = [
 const mainEl = document.getElementsByTagName("main")[0];
 let generatedPost = "";
 
+/* 
+    TODO:
+    1. Improve semantics ex: use btn ele for img, add alt text
+*/
 for (let i = 0; i < posts.length; i++) {
     let post = posts[i];
     generatedPost += `
