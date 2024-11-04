@@ -35,7 +35,7 @@ let generatedPost = "";
 for (let i = 0; i < posts.length; i++) {
     let post = posts[i];
     generatedPost += `
-        <div class="container post-item" data-index="${i}">
+        <article class="container post-item" data-index="${i}">
             <div class="post-header">
                 <img class="avatar-pic" src=${post.avatar} />
                 <div class="post-user-info">
@@ -55,7 +55,7 @@ for (let i = 0; i < posts.length; i++) {
                     <p>${post.username} <span class="comment">${post.comment}</span></p>
                 </div>
             </div>
-        </div>
+        </article>
     `;
 }
 
