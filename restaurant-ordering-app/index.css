@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Smythe;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 167px;
+    background-image: url("./asset/burger.jpeg");
+    background-size: cover;
+    background-position: center -150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+main {
+    width: 100%;
+    padding: 5% 5%;
+    display: relative;
+}
+
+/* FOOD SECTION */
+
+.food {
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 20px 0;
+}
+
+.food-info {
+    margin-left: 2vw;
+}
+
+.food-emoji {
+    width: 70px;
+    height: 90px;
+    font-size: 4rem;
+    opacity: 0.7;
+}
+
+.add-btn {
+    margin: auto 0 auto auto;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 100%;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.food-name {
+    font-weight: 400;
+}
+
+.food-ingredients {
+    color: gray;
+}
+.food-price {
+    margin-top: 6px;
+}
+
+/* ORDER CHECKOUT SECTION */
+
+#order-header {
+    text-align: center;
+    font-weight: 400;
+    margin: 2vh 0;
+}
+
+#order-items-con {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#order-btn {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #16db99;
+    border: none;
+    margin-top: 3vh;
+}
+
+#order-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5vh 0;
+}
+
+/* FOOD ITEM CHECKOUT */
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.food-checkout-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.food-checkout-info button {
+    border: none;
+    background-color: white;
+    color: gray;
+}
+
+.food-checkout-info button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.food-checkout-info .quantity {
+    color: lightseagreen;
+}
+
+/* PAY MODAL */
+
+#pay-modal {
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    background-color: white;
+    box-shadow: 0 0 20px darkgray;
+    z-index: 999;
+    padding: 40px;
+}
+
+#pay-modal form {
+    width: 100%;
+    height: 100%;
+}
+
+#pay-modal fieldset {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: none;
+}
+
+#pay-modal form input {
+    width: 100%;
+    display: block;
+    padding: 15px;
+}
+
+#pay-btn {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #16db99;
+    border: none;
+    margin-top: 3vh;
+}
+
+#pay-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.thank-you-message {
+    width: 100%;
+    color: #065f46;
+    background-color: #ecfdf5;
+    padding: 35px 20px;
+    text-align: center;
+    margin: 10px 0;
+}

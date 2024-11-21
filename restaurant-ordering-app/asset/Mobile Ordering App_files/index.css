@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+header {
+    width: 600px;
+    height: 167px;
+    background-image: url("./asset/burger.jpeg");
+    background-size: cover;
+}
